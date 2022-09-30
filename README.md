@@ -15,7 +15,10 @@ An example set of raw images can be found on our Google Drive host.
 
 ### Single reporter expressing cells
 Example images (\Demo\demo images) and pipelines (\Demo\image_analysis_pipelines\single) can be found in our Google Drive host. In this folder, both ilastik (10.ilp / 10_imported.ilp)and CellProfiler (CORR.cpproj and analyst.cpproj) scripts can be found.
-All MATLAB scripts used for single reporter lines have single_ appended to the name
+
+All MATLAB scripts used for single reporter lines have 'single_' appended to the name
+All MATLAB scripts used for double reporter lines have 'dual' appended to the name
+
 
 To extract data from single reporter expressing cells, please follow the steps below, Or if you would like, you may start directly at step 4 by using the files contained in Demo\singleReporter, where each folder corresponds to a relevant step starting at step 4 and beyond. 
 
