@@ -99,4 +99,3 @@ clear rowd rownd
 end
 save (['rankh'],'rankh')
 save (['rankp'],'rankp')
-close all

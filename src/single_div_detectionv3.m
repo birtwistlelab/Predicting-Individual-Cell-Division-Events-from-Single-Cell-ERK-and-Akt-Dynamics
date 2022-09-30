@@ -1,5 +1,4 @@
 %% pulling files
-load maxtimeBC
 myFolder=pwd;
 filePattern = fullfile(myFolder, 'joined_1hr_parsed B*.mat');
 matFiles = dir(filePattern);
@@ -117,8 +116,8 @@ print([wellname,' Div_nd'],'-dpng','-r300')
 end
 
     %% pulling and joining all the data together that was egf and ins treated
-myFolder=pwd
-filePattern = fullfile(myFolder, 'joined_div B*.mat');
+myFolder='M:\data\EF\csv\F\DIV_SEPERATED'
+filePattern = fullfile(myFolder, 'joined_div F*.mat');
 matFiles = dir(filePattern);
 expression='(joined_div)  | \w*';
 joined_div_all={};
@@ -138,8 +137,8 @@ end
 all_div_cells={};
 all_div_cells=horzcat(joined_div_all{:});
 %% we should not concider b02 or any 02
-myFolder=pwd
-filePattern = fullfile(myFolder, 'joined_nodiv B*.mat');
+myFolder='M:\data\EF\csv\F\DIV_SEPERATED'
+filePattern = fullfile(myFolder, 'joined_nodiv F*.mat');
 matFiles = dir(filePattern);
 expression='(joined_div)  | \w*';
 joined_nodiv_all={};
@@ -217,8 +216,6 @@ for i=1:length(all_non_div)
     plot(all_non_div{1,i}.Ratio,'r')
     hold on
 end
-save (['allmed_DIV'],'allmed_DIV')
-save (['allmed_NODIV'],'allmed_NODIV')
 
 plot(allmed_DIV,'linewidth',3,'Color',[0 0 .5 .8]) % for alpha= 0 to 1 the lines will be more clear
 plot(allmed_NODIV,'linewidth',3,'Color',[.5 0 0 .8]) % for alpha= 0 to 1 the lines will be more clear
@@ -238,6 +235,5 @@ set(gca,'FontSize',6)
 ax=gca
 box(ax,'off')
 set(gcf, 'PaperPositionMode','manual','PaperUnits','inches','PaperPosition',[0 0 3 2])
-savefig(gcf,['all_data_Div_nd'])
-print(['all_data_Div_nd'],'-dpng','-r300')
-close all
+savefig(gcf,[wellname,' all_data_Div_nd'])
+print([wellname,' all_data_Div_nd'],'-dpng','-r300')

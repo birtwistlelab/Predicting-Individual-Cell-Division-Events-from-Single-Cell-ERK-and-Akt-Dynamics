@@ -1,11 +1,14 @@
 w1s=14; %original time points
 w1e=40;
-w2s=40;
-w2e=165;
+w2s=40;% window used in paper
+w2e=165;% window used in paper
 w3s=97;
 w3e=165;
-load all_div_cells_ERK
-load all_non_div_ERK
+% make sure you are running the script in the following directory
+% /Demo\singleReporter\9 and the reporter of interrest 
+% for example if you want to plot ERK high dose data you will run the script 
+%         here Demo\singleReporter\9\ERK\high
+load  values.mat % This would change base on whyat data you are working with
 reporter_name={};
 reporter_name='ERK'
 median_w=strcat('median_w_',reporter_name);
@@ -104,4 +107,3 @@ clear rowd rownd
 end
 save (['rankh'],'rankh')
 save (['rankp'],'rankp')
-close all

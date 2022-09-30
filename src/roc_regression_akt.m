@@ -56,4 +56,3 @@ disp(AUC)
 %% set(gcf, 'PaperPositionMode','manual','PaperUnits','inches','PaperPosition',[0 0 3.5 2]);
 %% savefig(gcf,['ERKAktroc'])
 %% print(['ERKAktroc'],'-dpng','-r300')
-close all

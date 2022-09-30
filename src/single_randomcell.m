@@ -97,4 +97,3 @@ hold off
 set(gcf, 'PaperPositionMode','manual','PaperUnits','inches','PaperPosition',[0 0 3.5 2])
 savefig(gcf,['randomAkt'])
 print(['randomAkt'],'-dpng','-r300')
-close all
