@@ -88,7 +88,7 @@ Similar to above's steps, navigate to the dual reporter folder and run: If you a
 
 10.	Load `all_div_cells.mat` and `all_non_div.mat` from either high or low doses (Demo\dualReporter\11\)and run `dual_boxplots.m` which will plot paired ERK and Akt values for dividing and non-dividing cells. The function also plots a side by side of both ERK and Akt data along with the rank sum test results. Also, the code calculates medians (B_w_ERK.mat and B_w_Akt.mat), which are required for the steps that follow.
 11. To generate the Figure shown in Figure 2B, load `B_w_ERK.mat` and `B_w_Akt.mat` located in Demo\dualReporter\11 and run `dual_biaxial.m` 
-12. To generate the data shown in Figure 2C, load `B_w_ERK.mat` and `B_w_Akt.mat`(Demo\dualReporter\11) and execute the script 'logistic_regression.m' be sure to change the intervals for w2s and w2e (windows 2 start and end) to match the correct time interval [40 166].
+12. To generate the data shown in Figure 2C, load `B_w_ERK.mat` and `B_w_Akt.mat`(Demo\dualReporter\11) and execute the script 'logistic_regression.m' found here  (Predicting-Individual-Cell-Division-Events-from-Single-Cell-ERK-and-Akt-Dynamics/5min)  be sure to change the intervals for w2s and w2e (windows 2 start and end) to match the correct time interval [40 166].
 
 13.	To produce the scatter plots of all timepoints shown if Figure 3A load `all_div_cells.mat`, `all_non_div.mat`(Demo\dualReporter\11\) and run `dual_scatter_and_resample.m`. The outputs from the script are saved as `all_data.mat` (Demo\dualReporter\12\high)
 
